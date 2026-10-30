@@ -66,9 +66,9 @@ ntp:                                                                    # NTP �
   interval: 30                                                          # 校时间隔  单位：分钟
   dialer-proxy: DIRECT                                                  # 直连校时  不依赖代理节点
 # external-controller: 0.0.0.0:9090                                       # 面板地址
-# external-controller-unix: ./run/mihomo.sock
+# external-controller-unix: ./run/mihomo.sock                             # Unix 套接字地址
 # external-ui: ui                                                         # 面板目录
-# secret: ""                                                              # 面板密码  面板与 API 的访问凭据（默认 123456，建议自行修改）
+# secret: ""                                                              # 面板密码  面板与 API 的访问凭据（默认 空，建议自行修改）
 # external-ui-url: https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip
 tun:                                                                    # TUN配置
   enable: true                                                          # 网卡模式  是否启用 TUN 虚拟网卡模式  
@@ -175,12 +175,11 @@ proxy-groups:
   - name: 🇺🇸 美国节点
     <<: *Anchor_HS
     filter: *Anchor_US
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/US.png
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
   - name: 🇸🇬 新加坡节点
     <<: *Anchor_HS
     filter: *Anchor_SG
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/SG.png
-
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
 rules:
   # 屏蔽非中国/非私网目的地的 UDP 443（QUIC），保留原配置行为
   - AND,((NETWORK,UDP),(DST-PORT,443),(NOT,((OR,((RULE-SET,cn_domain),(RULE-SET,private_domain),(RULE-SET,private_ip),(RULE-SET,cn_ip)))))),REJECT
