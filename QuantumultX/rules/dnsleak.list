@@ -13,6 +13,7 @@ host-suffix, browserleaks.com, proxy
 host-suffix, browserleaks.org, proxy
 host-suffix, browserleaks.net, proxy
 host-suffix, perfect-privacy.com, proxy
+host-suffix, fastly-analytics.com, proxy
 host-suffix, nordvpn.com, proxy
 host-suffix, expressvpn.com, proxy
 host-suffix, vpnunlimited.com, proxy
