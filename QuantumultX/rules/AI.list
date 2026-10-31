@@ -1,13 +1,7 @@
 # NAME: OpenAI
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2025-06-06 09:20:00
-# HOST: 7
-# HOST-KEYWORD: 1
-# HOST-SUFFIX: 24
-# IP-ASN: 1
-# IP-CIDR: 2
-# TOTAL: 35
+HOST,o33249.ingest.sentry.io
 HOST,browser-intake-datadoghq.com,OpenAI
 HOST,chat.openai.com.cdn.cloudflare.net,OpenAI
 HOST,openai-api.arkoselabs.com,OpenAI
@@ -45,19 +39,27 @@ IP-CIDR,64.23.132.171/32,OpenAI
 IP-ASN,20473,OpenAI
 
 
-# ----------------------------------
-DOMAIN-SUFFIX,cloud.microsoft
-
-
 # NAME: Claude
-# AUTHOR: blackmatrix7
-# REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2025-06-06 09:20:01
-# DOMAIN: 1
-# DOMAIN-SUFFIX: 2
-# TOTAL: 3
-DOMAIN,cdn.usefathom.com
-DOMAIN-SUFFIX,anthropic.com
-DOMAIN-SUFFIX,claude.ai
-DOMAIN,servd-anthropic-website.b-cdn.net
+DOMAIN-SUFFIX,claude.ai,Claude
+DOMAIN-SUFFIX,anthropic.com,Claude
+DOMAIN-SUFFIX,claude.com,Claude
+DOMAIN-SUFFIX,clau.de,Claude
+DOMAIN-SUFFIX,claudemcpclient.com,Claude
+DOMAIN-SUFFIX,claudeusercontent.com,Claude
+DOMAIN,servd-anthropic-website.b-cdn.net,Claude
+DOMAIN,anthropic.com.cdn.cloudflare.net,Claude
+DOMAIN,anthropic.auth0.com,Claude
+DOMAIN,anthropic-com.ghost.io,Claude
+DOMAIN-SUFFIX,sentry.io,Claude
+DOMAIN-SUFFIX,statsigapi.net,Claude
+DOMAIN-SUFFIX,datadoghq.com,Claude
+DOMAIN-SUFFIX,browser-intake-datadoghq.com,Claude
+DOMAIN-SUFFIX,sift.com,Claude
+DOMAIN-SUFFIX,siftscience.com,Claude
+DOMAIN-SUFFIX,intercom.io,Claude
+DOMAIN-SUFFIX,intercomcdn.com,Claude
+DOMAIN,cdn.usefathom.com,Claude
+IP-CIDR,160.79.104.0/21,Claude,no-resolve
+IP-CIDR6,2607:6bc0::/32,Claude,no-resolve
+
 
