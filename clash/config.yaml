@@ -34,6 +34,7 @@ Anchor_IP: &Anchor_IP # 规则锚点：IP 规则集
   format: mrs
 Anchor_US: &Anchor_US '^(?i)(?=.*(美国|美國|🇺🇸|\bUS\b|\bUSA\b|\bNA\b|United\s?States|America|\bSJC\b|\bJFK\b|\bLAX\b|\bORD\b|\bATL\b|\bDFW\b|\bSFO\b|\bMIA\b|\bSEA\b|\bIAD\b)).*$'
 Anchor_SG: &Anchor_SG '^(?i)(?=.*(新加坡|🇸🇬|\bSG\b|Singapore|\bSGP\b|\bSIN\b|\bXSP\b)).*$'
+# Anchor_HOME: &Anchor_HOME '^(?i)(?=.*(家宽|🏠|家庭宽带|宽带|住宅|民宅|\bResidential\b|\bHome\b|\bISP\b|Broadband)).*$'
 
 proxy-providers:
   subscription1:
